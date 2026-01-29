@@ -27,13 +27,12 @@ export default function ImageSlider() {
   });
 
   return (
-    <div className="top-35 relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg max-sm:hidden">
-      {/* Image with link */}
+    <div className="mt-35 relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg">
       <a href={slides[index].href}>
         <img
           src={slides[index].img}
           alt={slides[index].alt}
-          className="w-full h-64 sm:h-80 object-cover transition-all duration-500"
+          className="w-full h-full sm:h-80 object-cover max-sm:hidden"
         />
       </a>
 
