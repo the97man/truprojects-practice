@@ -1,8 +1,8 @@
-import YT from "../assets/youtube.png";
-import FB from "../assets/facebook.png";
-import WA from "../assets/whatsapp.png";
-import IG from "../assets/instagram.png";
-import LIN from "../assets/linkedin.png";
+import YT from "../assets/youtube-icon.png";
+import FB from "../assets/facebook-icon.png";
+import WA from "../assets/whatsapp-icon.png";
+import IG from "../assets/instagram-icon.png";
+import LIN from "../assets/linkedin-icon.png";
 
 const TopNavbar = () => {
   // Social Icons (Dynamic)
