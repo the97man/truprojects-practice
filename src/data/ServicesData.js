@@ -22,25 +22,25 @@ export const ServicesData = [
   {
     type: "service",
     img: MiniProjects,
-    alt: "Industrial Standard",
-    title: "Industrial Standard",
+    alt: "Mini Projects",
+    title: "Mini Projects",
   },
   {
     type: "service",
     img: MajorProjects,
-    alt: "Project Training",
-    title: "Project Training",
+    alt: "Major Projects",
+    title: "Major Projects",
   },
   {
     type: "service",
     img: IEEE,
-    alt: "Weekend Workshops",
-    title: "Weekend Workshops",
+    alt: "IEEE Projects",
+    title: "IEEE Projects",
   },
   {
     type: "service",
     img: BulkScale,
-    alt: "Classroom Training",
-    title: "Classroom Training",
+    alt: "Bulk Scale",
+    title: "Bulk Scale",
   },
 ];
