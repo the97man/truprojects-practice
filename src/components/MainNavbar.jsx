@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import LOGO from "../assets/logo.png";
 
 const navLinks = [
-  { label: "Home", path: "/" },
-  { label: "About Us", path: "/about" },
-  { label: "All Courses", path: "/allcourses" },
-  { label: "Explore Programs", path: "/programs" },
-  { label: "Course Schedule", path: "/schedule" },
-  { label: "Contact Us", path: "/contact" },
-  { label: "Placements", path: "/placements" },
+  { label: "Home", path: "#" },
+  { label: "About Us", path: "#" },
+  { label: "B. Tech Projects", path: "#" },
+  { label: "M. Tech Projects", path: "#" },
+  { label: "Paper Research", path: "#" },
+  { label: "Document Writing", path: "#" },
+  { label: "Summer Internships", path: "#" },
+  { label: "Contact Us", path: "#" },
 ];
 
 const MainHeader = () => {
@@ -17,8 +18,8 @@ const MainHeader = () => {
 
   return (
     <nav
-      style={{ top: "40px" }}
-      className="fixed left-0 z-9998 w-full bg-white shadow"
+      // style={{ top: "60px" }}
+      className="top-15 fixed left-0 z-9998 w-full bg-white shadow"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         {/* Logo */}
@@ -52,7 +53,7 @@ const MainHeader = () => {
             <li key={index}>
               <Link
                 to={item.path}
-                className="text-gray-700 font-medium hover:text-emerald-600 transition"
+                className="p-2 text-sm rounded-lg hover:text-gray-100 hover:bg-red-500 transition"
               >
                 {item.label}
               </Link>

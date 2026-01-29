@@ -14,7 +14,7 @@ const TopNavbar = () => {
     { img: LIN, alt: "LinkedIn", href: "#" },
   ];
   return (
-    <nav className="fixed top-0 z-[9999] h-[60px] w-full bg-gray-950 flex items-center pr-8">
+    <nav className="fixed top-0 z-9999 h-15 w-full bg-gray-950 flex items-center pr-8">
       <div className="w-full max-w-7xl mx-auto flex items-center px-4">
         <div className="flex items-center gap-6">
           {/* Contact Info */}
@@ -45,7 +45,7 @@ const TopNavbar = () => {
         </div>
       </div>
 
-      <button className="text-red-500 px-4 py-2 text-2xl border-solid border-2 border-red-500 rounded-lg">
+      <button className="text-red-500 px-4 text-xl border-solid border-2 border-red-500 rounded-lg max-sm:text-sm py-2 whitespace-nowrap">
         Register Now
       </button>
     </nav>
