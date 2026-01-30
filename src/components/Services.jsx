@@ -2,17 +2,15 @@ import { ServicesData } from "../data/ServicesData";
 
 export default function Services() {
   return (
-    // ✅ Section wrapper to center everything
     <section className="max-w-6xl mx-auto px-6 py-12">
       {/* Heading */}
       <span className="text-3xl font-bold">
         <span>OUR</span> <span className="text-red-500">SERVICES</span>
       </span>
 
-      {/* ✅ Removed ml-15, keep it centered */}
       <hr className="w-16 mt-2 border-0 h-1 bg-red-500" />
 
-      {/* Cards */}
+      {/* Images with titles */}
       <div className="py-10">
         <div
           className="

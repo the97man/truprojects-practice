@@ -2,14 +2,12 @@ import { AboutUsData } from "../data/AboutUsData";
 
 export default function AboutUs() {
   return (
-    // ✅ Center container + padding
     <section className="max-w-6xl mx-auto px-6 py-12">
       {/* Heading */}
       <span className="text-3xl font-bold">
         <span>ABOUT</span> <span className="text-red-500">US</span>
       </span>
 
-      {/* ✅ Removed ml-15, keep it centered */}
       <hr className="w-16 mt-2 border-0 h-1 bg-red-500" />
 
       {/* Content */}

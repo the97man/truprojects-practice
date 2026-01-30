@@ -46,7 +46,7 @@ export default function ImageSlider() {
         ❯
       </button>
 
-      {/* Dots */}
+      {/* Slide Identifier */}
       <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
         {SliderData.map((_, i) => (
           <button

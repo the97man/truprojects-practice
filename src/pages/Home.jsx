@@ -4,6 +4,7 @@ import MainNavbar from "../components/MainNavbar";
 import HeroImageSlider from "../components/HeroImageSlider";
 import Services from "../components/Services";
 import AboutUs from "../components/AboutUs";
+import LatestTech from "../components/LatestTech";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroImageSlider />
       <Services />
       <AboutUs />
+      <LatestTech />
     </BrowserRouter>
   );
 }

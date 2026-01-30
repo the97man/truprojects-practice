@@ -7,10 +7,7 @@ const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav
-      // style={{ top: "60px" }}
-      className="top-15 fixed left-0 z-9998 w-full bg-white shadow"
-    >
+    <nav className="top-15 fixed left-0 z-9998 w-full bg-white shadow">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         {/* Logo */}
         <Link to="/" className="flex items-center">
