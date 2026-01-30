@@ -5,6 +5,7 @@ import HeroImageSlider from "../components/HeroImageSlider";
 import Services from "../components/Services";
 import AboutUs from "../components/AboutUs";
 import LatestTech from "../components/LatestTech";
+import YTChannel from "../components/YTChannel";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <AboutUs />
       <LatestTech />
+      <YTChannel />
     </BrowserRouter>
   );
 }
