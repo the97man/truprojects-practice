@@ -1,23 +1,15 @@
 import { useEffect, useState } from "react";
-import HERO1 from "../assets/hero1.jpg";
-import HERO2 from "../assets/hero2.jpg";
-import HERO3 from "../assets/hero3.jpg";
+import { SliderData } from "../data/SliderData";
 
 export default function ImageSlider() {
-  const slides = [
-    { img: HERO1, alt: "Hero Image 1", href: "#" },
-    { img: HERO2, alt: "Hero Image 2", href: "#" },
-    { img: HERO3, alt: "Hero Image 3", href: "#" },
-  ];
-
   const [index, setIndex] = useState(0);
 
   const next = () => {
-    setIndex((prev) => (prev + 1) % slides.length);
+    setIndex((prev) => (prev + 1) % SliderData.length);
   };
 
   const prev = () => {
-    setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+    setIndex((prev) => (prev - 1 + SliderData.length) % SliderData.length);
   };
 
   // Auto-slide every 5 seconds
@@ -28,10 +20,10 @@ export default function ImageSlider() {
 
   return (
     <div className="mt-35 relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg">
-      <a href={slides[index].href}>
+      <a href={SliderData[index].href}>
         <img
-          src={slides[index].img}
-          alt={slides[index].alt}
+          src={SliderData[index].img}
+          alt={SliderData[index].alt}
           className="w-full h-full sm:h-80 object-cover max-sm:hidden"
         />
       </a>
@@ -56,7 +48,7 @@ export default function ImageSlider() {
 
       {/* Dots */}
       <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-        {slides.map((_, i) => (
+        {SliderData.map((_, i) => (
           <button
             key={i}
             onClick={() => setIndex(i)}

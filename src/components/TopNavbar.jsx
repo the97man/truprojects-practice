@@ -1,18 +1,6 @@
-import YT from "../assets/youtube-icon.png";
-import FB from "../assets/facebook-icon.png";
-import WA from "../assets/whatsapp-icon.png";
-import IG from "../assets/instagram-icon.png";
-import LIN from "../assets/linkedin-icon.png";
+import { SocialLinksData } from "../data/SocialLinksData";
 
 const TopNavbar = () => {
-  // Social Icons (Dynamic)
-  const socialLinks = [
-    { img: YT, alt: "YouTube", href: "#" },
-    { img: FB, alt: "Facebook", href: "#" },
-    { img: WA, alt: "WhatsApp", href: "#" },
-    { img: IG, alt: "Instagram", href: "#" },
-    { img: LIN, alt: "LinkedIn", href: "#" },
-  ];
   return (
     <nav className="fixed top-0 z-9999 h-15 w-full bg-gray-950 flex items-center pr-8">
       <div className="w-full max-w-7xl mx-auto flex items-center px-4">
@@ -27,7 +15,7 @@ const TopNavbar = () => {
 
           {/* Social Icons */}
           <div className="flex items-center gap-3">
-            {socialLinks.map((icon, index) => (
+            {SocialLinksData.map((icon, index) => (
               <a
                 key={index}
                 href={icon.href}

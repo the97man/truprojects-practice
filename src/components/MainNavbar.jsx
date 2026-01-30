@@ -1,19 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { NavLinksData } from "../data/NavLinksData";
 import LOGO from "../assets/logo.png";
 
-const navLinks = [
-  { label: "Home", path: "#" },
-  { label: "About Us", path: "#" },
-  { label: "B. Tech Projects", path: "#" },
-  { label: "M. Tech Projects", path: "#" },
-  { label: "Paper Research", path: "#" },
-  { label: "Document Writing", path: "#" },
-  { label: "Summer Internships", path: "#" },
-  { label: "Contact Us", path: "#" },
-];
-
-const MainHeader = () => {
+const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -49,7 +39,7 @@ const MainHeader = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-8">
-          {navLinks.map((item, index) => (
+          {NavLinksData.map((item, index) => (
             <li key={index}>
               <Link
                 to={item.path}
@@ -66,7 +56,7 @@ const MainHeader = () => {
       {isOpen && (
         <div className="lg:hidden bg-white shadow-md">
           <ul className="flex flex-col gap-4 px-6 py-4">
-            {navLinks.map((item, index) => (
+            {NavLinksData.map((item, index) => (
               <li key={index}>
                 <Link
                   to={item.path}
@@ -84,4 +74,4 @@ const MainHeader = () => {
   );
 };
 
-export default MainHeader;
+export default MainNavbar;

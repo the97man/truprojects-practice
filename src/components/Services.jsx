@@ -1,14 +1,13 @@
-import React from "react";
 import { ServicesData } from "../data/ServicesData";
 
 export default function Services() {
   return (
     <div className="mt-20">
       <span className="ml-15 text-3xl font-bold">
-        <span>OUR</span> <soan className="text-red-500">SERVICES</soan>
+        <span>OUR</span> <span className="text-red-500">SERVICES</span>
       </span>
 
-      <hr class="w-13 mt-2 ml-15 border-0 h-1 bg-red-500" />
+      <hr className="w-13 mt-2 ml-15 border-0 h-1 bg-red-500" />
 
       <div className="max-w-7xl mx-auto py-10 px-4">
         <div

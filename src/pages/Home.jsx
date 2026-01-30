@@ -3,6 +3,7 @@ import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
 import HeroImageSlider from "../components/HeroImageSlider";
 import Services from "../components/Services";
+import AboutUs from "../components/AboutUs";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <MainNavbar />
       <HeroImageSlider />
       <Services />
+      <AboutUs />
     </BrowserRouter>
   );
 }
