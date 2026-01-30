@@ -1,33 +1,33 @@
 import { AboutUsData } from "../data/AboutUsData";
-// import AboutDropdown from "./AboutDropdown";
 
 export default function AboutUs() {
   return (
-    <div>
-      <span className="ml-15 text-3xl font-bold">
+    // ✅ Center container + padding
+    <section className="max-w-6xl mx-auto px-6 py-12">
+      {/* Heading */}
+      <span className="text-3xl font-bold">
         <span>ABOUT</span> <span className="text-red-500">US</span>
       </span>
 
-      <hr className="w-13 mt-2 ml-15 border-0 h-1 bg-red-500" />
+      {/* ✅ Removed ml-15, keep it centered */}
+      <hr className="w-16 mt-2 border-0 h-1 bg-red-500" />
 
       {/* Content */}
-      <div className="mt-10 flex gap-6 justify-center items-center max-sm:flex-column">
+      <div className="mt-10 flex flex-col md:flex-row gap-6 items-center">
+        {/* Image */}
         <img
           src={AboutUsData.image}
           alt="About Tru Projects"
-          className="w-full max-w-md rounded-lg shadow"
+          className="w-full md:w-1/2 rounded-lg shadow"
         />
 
-        <div className="text-gray-700 leading-relaxed max-w-xl border-4 border-red-500 p-4">
+        {/* Text */}
+        <div className="w-full md:w-1/2 text-gray-700 leading-relaxed space-y-4">
           {AboutUsData.aboutus.map((text, index) => (
-            <>
-              <p className="mb-3" key={index}>
-                {text}
-              </p>
-            </>
+            <p key={index}>{text}</p>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

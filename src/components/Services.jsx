@@ -2,20 +2,26 @@ import { ServicesData } from "../data/ServicesData";
 
 export default function Services() {
   return (
-    <div className="mt-20">
-      <span className="ml-15 text-3xl font-bold">
+    // ✅ Section wrapper to center everything
+    <section className="max-w-6xl mx-auto px-6 py-12">
+      {/* Heading */}
+      <span className="text-3xl font-bold">
         <span>OUR</span> <span className="text-red-500">SERVICES</span>
       </span>
 
-      <hr className="w-13 mt-2 ml-15 border-0 h-1 bg-red-500" />
+      {/* ✅ Removed ml-15, keep it centered */}
+      <hr className="w-16 mt-2 border-0 h-1 bg-red-500" />
 
-      <div className="max-w-7xl mx-auto py-10 px-4">
+      {/* Cards */}
+      <div className="py-10">
         <div
-          className="grid gap-6 mb-10
-               grid-cols-2
-               md:grid-cols-3
-               lg:grid-cols-4
-               place-items-center"
+          className="
+            grid gap-6 mb-10
+            grid-cols-2
+            md:grid-cols-3
+            lg:grid-cols-4
+            place-items-center
+          "
         >
           {ServicesData.map((card, index) => (
             <div key={index} className="w-full flex justify-center">
@@ -31,6 +37,6 @@ export default function Services() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
