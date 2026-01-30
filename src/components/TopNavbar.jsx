@@ -6,7 +6,7 @@ const TopNavbar = () => {
       <div className="w-full max-w-7xl mx-auto flex items-center px-4">
         <div className="flex items-center gap-6">
           {/* Contact Info */}
-          <div className="hidden md:block text-gray-100">
+          <div className="flex flex-col md:flex-row text-gray-100">
             <p>
               <span className="cursor-pointer">91-9676190678</span>
               &nbsp; &nbsp; info@truprojects.in
@@ -14,7 +14,7 @@ const TopNavbar = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 max-sm:hidden">
             {SocialLinksData.map((icon, index) => (
               <a
                 key={index}
