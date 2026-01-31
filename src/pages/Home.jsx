@@ -6,7 +6,7 @@ import Services from "../components/Services";
 import AboutUs from "../components/AboutUs";
 import LatestTech from "../components/LatestTech";
 import YTChannel from "../components/YTChannel";
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <AboutUs />
       <LatestTech />
       <YTChannel />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </BrowserRouter>
   );
 }
