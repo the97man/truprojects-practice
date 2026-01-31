@@ -3,43 +3,52 @@ import YTLOGO from "../assets/youtube-logo.jpg";
 
 export default function YTChannel() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <section className="max-w-6xl mx-auto px-6 py-12">
       {/* Heading */}
-      <div className="text-center md:text-left">
-        <span className="text-3xl font-bold">
-          <span>YOUTUBE</span> <span className="text-red-500">CHANNEL</span>
-        </span>
-        <hr className="w-16 mt-2 mx-auto md:mx-0 border-0 h-1 bg-red-500" />
-      </div>
+      <span className="text-3xl font-bold">
+        <span>YOUTUBE</span> <span className="text-red-500">CHANNEL</span>
+      </span>
 
-      <div className="mt-10 relative w-full min-h-70 sm:min-h-70 md:min-h-70 overflow-hidden rounded-xl">
-        {/* Background image */}
+      <hr className="w-16 mt-2 border-0 h-1 bg-red-500" />
+
+      <div className="mt-10 relative w-full h-100 overflow-hidden rounded-xl">
+        {/* Background Image */}
         <img
           src={YTBG}
           alt="Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-80"
+          className="absolute inset-0 object-cover opacity-80 max-sm:h-full"
         />
 
-        {/* Overlay container */}
-        <div className="relative z-10 flex justify-center md:justify-start items-center h-full px-4">
-          <div className="relative w-full max-w-sm md:max-w-md md:ml-20">
-            {/* Logo */}
-            <img
-              src={YTLOGO}
-              alt="YouTube Logo"
-              className="w-full rounded-lg"
-            />
+        {/* Overlay */}
+        <div
+          className="
+            relative z-10
+            mt-8
+            w-[90%] mx-auto
+            sm:w-105
+            md:ml-40 md:mt-14 md:w-98
+          "
+        >
+          {/* Logo */}
+          <img src={YTLOGO} alt="YouTube Logo" className="w-full rounded-lg" />
 
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/30 rounded-lg" />
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/20 rounded-lg" />
 
-            {/* Text */}
-            <p className="absolute inset-0 z-10 flex items-center justify-center text-white text-xs sm:text-sm md:text-base px-4 text-center leading-relaxed">
-              Our Youtube channel is a leading source of expert-driven and
-              actionable educational content. Explore hundreds of videos
-              featuring experts explaining topics aimed at building core skills.
-            </p>
-          </div>
+          {/* Text */}
+          <p
+            className="
+              absolute inset-0 z-10
+              flex items-center justify-center
+              text-white text-xs sm:text-sm
+              px-3 text-center leading-relaxed
+            "
+          >
+            Our Youtube channel is a leading source of expert-driven and
+            actionable educational content. Explore hundreds of videos featuring
+            experts explaining topics aimed at getting us big ideas and core
+            skills.
+          </p>
         </div>
       </div>
     </section>
