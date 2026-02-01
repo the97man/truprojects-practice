@@ -12,14 +12,18 @@ export default function LatestTech() {
       <hr className="w-16 mt-2 border-0 h-1 bg-red-500" />
 
       {/* Cards */}
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
+      <div className="mt-10 grid gap-6 md:grid-cols-1 lg:grid-cols-2">
         {LatestTechData.map((card) => (
           <div
             key={card.id}
             className="flex flex-col sm:flex-row gap-4 items-center sm:items-start border rounded-lg p-5 shadow hover:shadow-md transition"
           >
             {/* Image */}
-            <img src={card.image} alt={card.title} className="w-full h-full" />
+            <img
+              src={card.image}
+              alt={card.title}
+              className="w-full h-full md:w-80"
+            />
 
             {/* Content */}
             <div className="p-4">
