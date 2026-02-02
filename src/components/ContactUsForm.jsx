@@ -6,9 +6,9 @@ import {
 } from "react-icons/hi";
 import CONTACTUSBG from "../assets/contact-us-background.jpg";
 import GoogleMap from "./GoogleMap";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 
-export default function HeroContactUs() {
+export default function ContactUsForm() {
   return (
     <>
       <div className="relative">
