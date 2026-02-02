@@ -24,7 +24,7 @@ export default function ImageSlider() {
         <img
           src={SliderData[index].img}
           alt={SliderData[index].alt}
-          className="w-full h-full sm:h-80 object-cover max-sm:hidden"
+          className="w-full h-full sm:h-80 object-cover"
         />
       </a>
 

@@ -26,7 +26,9 @@ function Accordion({ title, isOpen, onToggle, children }) {
 
       <div
         className={`overflow-hidden transition-all duration-500 ease-in-out ${
-          isOpen ? "max-h-90" : "max-h-0"
+          isOpen
+            ? "max-h-90 max-sm:max-h-full max-lg:max-h-full max-xl:max-h-full"
+            : "max-h-0"
         }`}
       >
         <div className="px-4 py-3 text-gray-600 bg-gray-100 space-y-2">
