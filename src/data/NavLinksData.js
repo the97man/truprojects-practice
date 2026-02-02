@@ -6,5 +6,5 @@ export const NavLinksData = [
   { label: "Paper Research", path: "#" },
   { label: "Document Writing", path: "#" },
   { label: "Summer Internships", path: "#" },
-  { label: "Contact Us", path: "#" },
+  { label: "Contact Us", path: "/contact-us" },
 ];

@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <BrowserRouter>
+    <>
       <TopNavbar />
       <MainNavbar />
       <HeroImageSlider />
@@ -21,6 +21,6 @@ export default function Home() {
       <YTChannel />
       <Testimonials />
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }

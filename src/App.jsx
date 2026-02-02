@@ -1,11 +1,16 @@
 import "./App.css";
-import Home from "./pages/Home.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter basename="/truprojects-practice">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
