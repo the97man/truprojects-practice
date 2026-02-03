@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import HEADERBG from "../assets/header-background.jpg";
 import Footer from "./Footer";
 import { AboutUsPageData } from "../data/AboutUsPageData.js";
+// import YouTubeVideos from "./YouTubeVideos.jsx";
 
 export default function AboutUsPageComp() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -89,13 +90,15 @@ export default function AboutUsPageComp() {
 
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-blue-600 hover:underline focus:outline-none"
+              className="text-white bg-blue-500 p-2 hover:cursor-pointer focus:outline-none"
             >
-              {isExpanded ? "Read less" : "Read more"}
+              {isExpanded ? "Close" : "Read More"}
             </button>
           </div>
         </div>
       </div>
+
+      {/* <YouTubeVideos /> */}
 
       <Footer />
     </>

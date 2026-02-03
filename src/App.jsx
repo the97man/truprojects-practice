@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import ContactUsPage from "./pages/ContactUsPage";
 import MainNavbar from "./components/MainNavbar";
 import AboutUsPage from "./pages/AboutUsPage";
-import PaperResearchPage from "./pages/PaperResearchPage";
+import ResearchPaperPage from "./pages/ResearchPaperPage";
 import DocumentWritingPage from "./pages/DocumentWritingPage";
 import SummerInternshipsPage from "./pages/SummerInternshipsPage";
 
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/about-us-page" element={<AboutUsPage />} />
-        <Route path="/paper-research-page" element={<PaperResearchPage />} />
+        <Route path="/research-paper-page" element={<ResearchPaperPage />} />
         <Route
           path="/document-writing-page"
           element={<DocumentWritingPage />}
