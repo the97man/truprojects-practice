@@ -1,6 +1,6 @@
 import AboutUsImage from "../assets/about-us-image.jpg";
 
-export const AboutUsData = {
+export const AboutUsSectionData = {
   title: "About Us",
   image: AboutUsImage,
 

@@ -3,7 +3,7 @@ import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
 import HeroImageSlider from "../components/HeroImageSlider";
 import Services from "../components/Services";
-import AboutUs from "../components/AboutUs";
+import AboutUsSection from "../components/AboutUsSection";
 import LatestTech from "../components/LatestTech";
 import YTChannel from "../components/YTChannel";
 import Testimonials from "../components/Testimonials";
@@ -16,7 +16,7 @@ export default function Home() {
       <MainNavbar />
       <HeroImageSlider />
       <Services />
-      <AboutUs />
+      <AboutUsSection />
       <LatestTech />
       <YTChannel />
       <Testimonials />

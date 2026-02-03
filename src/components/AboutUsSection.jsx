@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Accordion from "./Accordion";
-import { AboutUsData } from "../data/AboutUsData";
+import { AboutUsSectionData } from "../data/AboutUsSectionData.js";
 
-export default function AboutUs() {
+export default function AboutUsSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -22,7 +22,7 @@ export default function AboutUs() {
       <div className="mt-10 flex flex-col md:flex-row gap-8 items-start">
         {/* Image */}
         <img
-          src={AboutUsData.image}
+          src={AboutUsSectionData.image}
           alt="About Tru Projects"
           className="w-full md:w-1/2 rounded-lg shadow"
         />
@@ -30,7 +30,7 @@ export default function AboutUs() {
         {/* Accordions */}
         <div className="w-full md:w-1/2 space-y-6">
           <div className="space-y-12">
-            {AboutUsData.sections.map((section, index) => (
+            {AboutUsSectionData.sections.map((section, index) => (
               <Accordion
                 key={index}
                 title={section.title}

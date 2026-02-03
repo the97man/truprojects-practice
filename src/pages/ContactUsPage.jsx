@@ -1,14 +1,13 @@
-import { BrowserRouter } from "react-router-dom";
 import TopNavbar from "../components/TopNavbar";
 import MainNavbar from "../components/MainNavbar";
-import ContactUsForm from "../components/ContactUsForm";
+import ContactUsComp from "../components/ContactUsComp";
 
 function ContactUs() {
   return (
     <>
       <TopNavbar />
       <MainNavbar />
-      <ContactUsForm />
+      <ContactUsComp />
     </>
   );
 }
