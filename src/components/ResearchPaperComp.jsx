@@ -1,11 +1,14 @@
+import React, { useState } from "react";
 import HEADERBG from "../assets/header-background.jpg";
 import { ResearchPaperData } from "../data/ResearchPaperData.js";
 import Footer from "./Footer";
 import Card from "../components/Card.jsx";
 
 export default function PaperResearchComp() {
-  // const topRow = ResearchPaperData.steps.slice(0, 5);
-  // const bottomRow = ResearchPaperData.steps.slice(5);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const PREVIEW_COUNT = 3;
+  const MAX_LIST_ITEMS = 5;
 
   return (
     <>
@@ -47,7 +50,7 @@ export default function PaperResearchComp() {
 
         {/* Journals */}
         <div>
-          <p className="text-center text-3xl mb-5">
+          <p className="text-center text-3xl mt-30 mb-5">
             JOURNALS WHERE OUR CLIENTS GOT PUBLISHED
           </p>
           <ul
@@ -124,6 +127,64 @@ export default function PaperResearchComp() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        {/* JOURNAL PAPER PUBLICATION PROCESS */}
+        <div className="max-w-6xl mx-auto text-left">
+          <h2 className="text-3xl font-bold mt-30">
+            JOURNAL PAPER PUBLICATION{" "}
+            <span className="text-red-500">PROCESS</span>
+          </h2>
+
+          <div className="mt-5 max-w-full space-y-6">
+            {/* Ordered list */}
+            <ol className="list-decimal ml-6 space-y-6">
+              {ResearchPaperData.process
+                .slice(0, MAX_LIST_ITEMS)
+                .map((step, index) =>
+                  !isExpanded && index >= PREVIEW_COUNT ? null : (
+                    <li key={index}>
+                      <span className="font-semibold">{step.title}:</span>{" "}
+                      {step.description}
+                    </li>
+                  ),
+                )}
+            </ol>
+
+            {/* Non-list dynamic content */}
+            {isExpanded && ResearchPaperData.extraContent?.length > 0 && (
+              <div className="space-y-4">
+                {ResearchPaperData.extraContent.map((item, index) => (
+                  <p key={index}>{item.description}</p>
+                ))}
+              </div>
+            )}
+
+            {/* Read More / Close */}
+            {ResearchPaperData.process.length > PREVIEW_COUNT && (
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="text-white bg-blue-500 px-4 py-2 hover:cursor-pointer focus:outline-none"
+              >
+                {isExpanded ? "Close" : "Read More"}
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Images */}
+        <div className="max-w-6xl mx-auto mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-4 justify-items-center">
+            {ResearchPaperData.images.map((img, index) => (
+              <img
+                key={index}
+                src={img.src}
+                alt={img.alt}
+                className="w-50 h-auto object-contain mt-10"
+                loading="lazy"
+              />
+            ))}
           </div>
         </div>
       </div>
