@@ -1,0 +1,23 @@
+export const SummerInternshipsData = {
+  journals: [
+    { label: "MACHINE LEARNING" },
+    { label: "ARTIFICIAL INTELLIGENCE" },
+    { label: "DEEP LEARNING" },
+    { label: "PYTHON WEB DEVELOPMENT" },
+    { label: "EMBEDDED SYSTEMS" },
+    { label: "VLSI" },
+    { label: "IOT" },
+    { label: "Data science Internship Program" },
+    { label: "Image processing Internship Program" },
+    { label: "Java Internship Program" },
+    { label: "Mathlab Internship Program" },
+    { label: "Natural language processing Internship Program" },
+    { label: "Web development Internship Program" },
+    { label: "Summer Internship 2022" },
+    { label: "Summer Internship 2023" },
+    { label: "Summer Internship B.Tech" },
+    { label: "Summer Internship for ECE Students" },
+    { label: "Summer Internship for CSE Students" },
+    { label: "Online Summer Internship" },
+  ],
+};
