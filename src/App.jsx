@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import ContactUsPage from "./pages/ContactUsPage";
 import MainNavbar from "./components/MainNavbar";
 import AboutUsPage from "./pages/AboutUsPage";
+import BTechPage from "./pages/BTechPage";
+import MTechPage from "./pages/MTechPage";
 import ResearchPaperPage from "./pages/ResearchPaperPage";
 import DocumentWritingPage from "./pages/DocumentWritingPage";
 import SummerInternshipsPage from "./pages/SummerInternshipsPage";
@@ -16,6 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/about-us-page" element={<AboutUsPage />} />
+        <Route path="/b-tech-page" element={<BTechPage />} />
+        <Route path="/m-tech-page" element={<MTechPage />} />
         <Route path="/research-paper-page" element={<ResearchPaperPage />} />
         <Route
           path="/document-writing-page"

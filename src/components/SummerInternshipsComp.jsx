@@ -157,7 +157,7 @@ export default function SummerInternshipsComp() {
 
         <div className="max-w-6xl mx-auto text-left">
           <h2 className="text-3xl font-bold mt-30">
-            About Summer <span className="text-red-500">Internship</span>
+            About Summer <span className="text-red-500">Internships</span>
           </h2>
         </div>
 

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import HEADERBG from "../assets/header-background.jpg";
 import Footer from "./Footer";
 import { AboutUsPageData } from "../data/AboutUsPageData.js";
-// import YouTubeVideos from "./YouTubeVideos.jsx";
 
 export default function AboutUsPageComp() {
   const [isExpanded, setIsExpanded] = useState(false);
