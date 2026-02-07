@@ -1,15 +1,13 @@
-import TopNavbar from "../components/TopNavbar";
-import MainNavbar from "../components/MainNavbar";
 import BTechComp from "../components/BTechComp";
+import TopNavbar from "../components/TopNavbar";
 
-function BTechPage() {
+const BTechPage = () => {
   return (
     <>
       <TopNavbar />
-      <MainNavbar />
       <BTechComp />
     </>
   );
-}
+};
 
 export default BTechPage;
