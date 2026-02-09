@@ -2,7 +2,8 @@ import { HiOutlineHome } from "react-icons/hi";
 import { HiOutlinePhone } from "react-icons/hi";
 import { HiOutlineMail } from "react-icons/hi";
 import FooterData from "../data/FooterData";
-import FooterBG from "../assets/footer-background.jpg"; // 👈 your background image
+import FooterBG from "../assets/footer-background.jpg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -79,12 +80,12 @@ export default function Footer() {
             <ul className="list-disc marker:text-red-500 pl-6 space-y-4">
               {FooterData.quicklinks1.map((quicklinks1, index) => (
                 <li key={index}>
-                  <a
-                    href={quicklinks1.url}
-                    className="text-white text-decoration-none hover:text-red-500 transition"
+                  <Link
+                    to={quicklinks1.url}
+                    className="text-white hover:text-red-500 transition"
                   >
                     {quicklinks1.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -100,12 +101,12 @@ export default function Footer() {
             <ul className="list-disc marker:text-red-500 pl-6 space-y-4">
               {FooterData.quicklinks2.map((quicklinks2, index) => (
                 <li key={index}>
-                  <a
-                    href={quicklinks2.url}
-                    className="text-white text-decoration-none hover:text-red-500 transition"
+                  <Link
+                    to={quicklinks2.url}
+                    className="text-white hover:text-red-500 transition"
                   >
                     {quicklinks2.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -121,12 +122,12 @@ export default function Footer() {
             <ul className="list-disc marker:text-red-500 pl-6 space-y-4">
               {FooterData.quicklinks3.map((quicklinks3, index) => (
                 <li key={index}>
-                  <a
-                    href={quicklinks3.url}
-                    className="text-white text-decoration-none hover:text-red-500 transition"
+                  <Link
+                    to={quicklinks3.url}
+                    className="text-white hover:text-red-500 transition"
                   >
                     {quicklinks3.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -102,30 +102,18 @@ const FooterData = {
       url: "/m-tech-page/civil/minor-projects",
     },
 
-    {
-      label: "B.Tech Mechanical Major Projects",
-      url: "/b-tech-page/mechanical/major-projects",
-    },
-    {
-      label: "B.Tech Mechanical Minor Projects",
-      url: "/b-tech-page/mechanical/minor-projects",
-    },
+    { label: "B.Tech Mechanical Major Projects", url: "#" },
+    { label: "B.Tech Mechanical Minor Projects", url: "#" },
 
-    {
-      label: "M.Tech Mechanical Major Projects",
-      url: "/m-tech-page/mechanical/major-projects",
-    },
-    {
-      label: "M.Tech Mechanical Minor Projects",
-      url: "/m-tech-page/mechanical/minor-projects",
-    },
+    { label: "M.Tech Mechanical Major Projects", url: "#" },
+    { label: "M.Tech Mechanical Minor Projects", url: "#" },
 
-    { label: "MBA Marketing Projects", url: "/mba/marketing-projects" },
-    { label: "MBA HR Projects", url: "/mba/hr-projects" },
-    { label: "MBA Finance Projects", url: "/mba/finance-projects" },
+    { label: "MBA Marketing Projects", url: "#" },
+    { label: "MBA HR Projects", url: "#" },
+    { label: "MBA Finance Projects", url: "#" },
 
-    { label: "Privacy Policy", url: "/privacy-policy" },
-    { label: "Terms & Conditions", url: "/terms-conditions" },
+    { label: "Privacy Policy", url: "#" },
+    { label: "Terms & Conditions", url: "#" },
   ],
 
   contact: {
