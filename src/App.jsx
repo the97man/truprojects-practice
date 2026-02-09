@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import ContactUsPage from "./pages/ContactUsPage";
 import MainNavbar from "./components/MainNavbar";
@@ -59,6 +60,7 @@ function App() {
   return (
     <BrowserRouter basename="/truprojects-practice">
       <MainNavbar />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
