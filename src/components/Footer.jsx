@@ -12,8 +12,7 @@ export default function Footer() {
       style={{ backgroundImage: `url(${FooterBG})` }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/80" />
-
+      <div className="absolute inset-0 bg-black/80 pointer-events-none" />
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
